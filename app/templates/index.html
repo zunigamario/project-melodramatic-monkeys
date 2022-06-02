@@ -25,7 +25,6 @@
 </head>
 
 <body>
-    {% block body %}
     <header class="nav-bar">
         <div class="nav-content">
             <a href="/">
@@ -41,6 +40,7 @@
             </a>
             <a href="/education">
                 <p>Education</p>
+            </a>
         </div>
     </header>
     <!-- <div class="profile">
@@ -48,7 +48,7 @@
             <img src="./static/img/logo.jpg">
         </div>
         <h1>{{ title }}</h1>
-    </div>
-    {% endblock %}
+    </div> -->
+    {% block body %}{% endblock %}
 </body>
 </html>
