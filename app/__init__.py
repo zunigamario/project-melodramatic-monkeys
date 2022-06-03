@@ -18,3 +18,11 @@ def about():
 def experience():
     return render_template('experience.html', url=os.getenv("URL"))
 
+@app.route('/education')
+def education():
+    return render_template('education.html', url=os.getenv("URL"))
+
+@app.route('/hobbies')
+def hobbies():
+    return render_template('hobbies.html', url=os.getenv("URL"))
+

@@ -1,0 +1,33 @@
+#hobbies-header {
+    text-align: center;
+    color: #1C539F;
+}
+
+#hobbies-body {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    #hobbies-body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+}
+
+.hobbies-img-crop {
+    width: 250px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.hobbies-img {
+    height: 250px;
+}
+
+.hobbies-name {
+    color: #1C539F;
+}
