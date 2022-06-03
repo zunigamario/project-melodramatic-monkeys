@@ -5,29 +5,39 @@
 
 #hobbies-body {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 270px 270px 270px;
     text-align: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 900px) {
     #hobbies-body {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 270px 270px;
         text-align: center;
     }
 }
 
+.hobbies-item {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #cee2ff;
+}
+
 .hobbies-img-crop {
-    width: 250px;
+    width: 220px;
     overflow: hidden;
     margin: auto;
     border-radius: 10px;
 }
 
 .hobbies-img {
-    height: 250px;
+    height: 220px;
 }
 
 .hobbies-name {
     color: #1C539F;
+    margin: 10px 0px 0px 0px;
 }
