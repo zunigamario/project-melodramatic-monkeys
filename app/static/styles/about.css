@@ -1,12 +1,41 @@
 #about-body {
     text-align: center;
     padding: 15px;
+    background-image: linear-gradient(to right, rgba(207, 85, 162, 0.929),rgba(151, 72, 204, 0.933), rgba(78, 132, 212, 0.932));
+    height: 250px;
+}
+
+#about-img-crop {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 50px auto 10px auto;
 }
 
 #about-img {
-    border-radius: 10px;
+    width: 200px;
+}
+
+#about-hi {
+    color: white;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+#about-text {
+    padding: 30px;
 }
 
 #about-header {
-    color: #1C539F;
+    color: rgb(200, 136, 228);
+    letter-spacing: 0.1em;
+}
+
+#about-me {
+    color: rgb(200, 136, 228);
+    letter-spacing: 0.06em;
+    line-height: 1.3em;
 }
