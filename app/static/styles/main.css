@@ -64,7 +64,7 @@ body {
     width: 180px;
     border-right: 2px solid rgba(207, 85, 162, 0.929);
     overflow: hidden;
-    margin: 33vh auto 10px auto;
+    margin: 29vh auto 10px auto;
     letter-spacing: 0.4em;
     animation:
         type 1.3s steps(7, end),
@@ -85,7 +85,7 @@ body {
     color: white;
     text-align: center;
     font-weight: 100;
-    font-size: 1.8em;
+    font-size: 1.95em;
     margin: 5px;
 }
 
@@ -94,7 +94,44 @@ body {
     text-align: center;
     font-weight: 100;
     letter-spacing: 0.3em;
-    font-size: 1em;
+    font-size: 1.15em;
+}
+
+#home-toggle-msg {
+    margin-top: 32px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    color:rgba(237, 156, 255, 0.929);
+}
+
+#home-buttons {
+    width: 172px;
+    margin: 15px auto;
+}
+
+#home-button-kayla {
+    padding: 12px 20px;
+    color: white;
+    background-color: rgba(209, 108, 172, 0.782);
+    border-radius: 7px;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+#home-button-mario {
+    padding: 12px 20px;
+    color: white;
+    background-color: rgba(96, 143, 213, 0.846);
+    border-radius: 7px;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
 }
 
 .circle1 {
