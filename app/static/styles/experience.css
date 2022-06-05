@@ -9,7 +9,7 @@
 
 #experience-columns {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 120px auto;
 }
 
 .experience-type {
