@@ -32,10 +32,12 @@
 #about-header {
     color: rgb(200, 136, 228);
     letter-spacing: 0.1em;
+    font-weight: 500;
 }
 
 #about-me {
-    color: rgb(200, 136, 228);
+    color: rgb(213, 148, 241);
     letter-spacing: 0.06em;
     line-height: 1.3em;
+    font-weight: 300;
 }
