@@ -5,6 +5,13 @@
     height: 250px;
 }
 
+#about-body-kayla {
+    text-align: center;
+    padding: 15px;
+    background-image: linear-gradient(to right, rgba(78, 132, 212, 0.932),rgba(151, 72, 204, 0.933), rgba(207, 85, 162, 0.929) );
+    height: 250px;
+}
+
 #about-img-crop {
     width: 200px;
     height: 200px;
