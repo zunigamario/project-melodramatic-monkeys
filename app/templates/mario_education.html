@@ -1,8 +1,24 @@
+
 {% extends "mario_index.html" %}
 {% block title %}{{ super() }} {% endblock %}
 {% block body %}
+    <div class = "circle1"></div>
+    <div class = "circle2"></div>
+    <div class = "circle3"></div>
+    <div class = "circle4"></div>
     <h1 id = "education-header">Education</h1>
-    <p class = "education-post">I went to Bellarmine College Preparatory in San Jose, California. Now I attend UC Berkeley and am going to enter my junior year.
-    </p>
+    <div id = "education-post-position">
+        <div class = "education-posts" >
+            <img class = "education-img" src = "../static/img/BCP-Crest.png">
+            <p class = "education-post">Bellarmine College Preparatory</p>
+        </div>
+        <div class = "education-posts" >
+            <img class = "education-img" src = "../static/img/UC Berkeley.png">
+            <p class = "education-post">UC Berkeley</p> 
+        </div>
+    </div>
 {% endblock %}
+
+
+
 
