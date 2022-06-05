@@ -2,13 +2,19 @@
 {% block body %}
 <div id = "places-body">
     <h1 id = "places-header">Places I've Visited</h1>
-    <img src = "../static/img/vegas.png" id = "places-img"  style="margin-top: .5cm ;">
-    <p>I don't really travel, but one place I've been to is Las Vegas, Nevada. We went there for New Year's Eve back in 2018, and we had a lot of fun walking around, exploring the Strip, and watching shows.
-        </p>
-
-    <img src = "../static/img/tahoe.png" id = "places-img">
-    <p>Another place I've been to is Lake Tahoe, which is situated near the border of California and Nevada. It's a nice place to go to during the winter, as the snow makes for a lot of nice sights and for fun sledding!</p>
+    <div id = "places-format">
+        <img src = "../static/img/vegas.png" class = "places-img"  style="margin-top: .5cm ;">
+        <div>
+            <p class = "places-location">Las Vegas</p>
+            <p class = "places-description" >I don't really travel, but one place I've been to is Las Vegas, Nevada. We went there for New Year's Eve back in 2018, and we had a lot of fun walking around, exploring the Strip, and watching shows.</p>
+        </div>
+        <img src = "../static/img/tahoe.png" class = "places-img">
+        <div>
+            <p class = "places-location">Lake Tahoe</p>
+            <p class = "places-description">Another place I've been to is Lake Tahoe, which is situated near the border of California and Nevada. It's a nice place to go to during the winter, as the snow makes for a lot of nice sights and for fun sledding!</p>
+        </div>
+    </div>
     <h2 id = "places-header" style="margin-top: 1cm">Places I Want To Visit</h2>
-    <p>I haven't travelled very much, but a few places I'd love to travel to are Spain, Italy, and Greece! I feel like those places have a lot of things to explore, such as interesting architectures, cultures, and cuisine!</p>
+    <p class = "places-description" >I haven't travelled very much, but a few places I'd love to travel to are Spain, Italy, and Greece! I feel like those places have a lot of things to explore, such as interesting architectures, cultures, and cuisine!</p>
 </div>
 {% endblock %}

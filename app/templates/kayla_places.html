@@ -2,12 +2,24 @@
 {% block body %}
 <div id = "places-body">
     <h1 id = "places-header">Places I've Visited</h1>
-    <img src = "../static/img/" id = "places-img"  style="margin-top: .5cm ;">
-    <p></p>
-
-    <img src = "../static/img/" id = "places-img">
-    <p></p>
+    <div id = "places-format">
+        <img src = "../static/img/chicago.jpeg" class = "places-img"  style="margin-top: .5cm ;">
+        <div>
+            <p class = "places-location">Chicago</p>
+            <p class = "places-description">I went to Chicago with my family.  We went during a heat wave so I spent most of the trip trying not to melt.  I remember visiting the Chicago Bean, but the rest of the trip was a hot blur.</p>
+        </div>
+        <img src = "../static/img/bahamas.jpeg" class = "places-img">
+        <div>
+            <p class = "places-location">Bahamas</p>
+            <p class = "places-description">The Bahamas is such a beautiful place, and I'm so happy I got the chance to go.  I have a lot of fond memories of this trip.  The highlight of it was probably when I got to kiss a dolphin!</p>
+        </div>
+        <img src = "../static/img/hong-kong.jpeg" class = "places-img">
+        <div>
+            <p class = "places-location">Hong Kong</p>
+            <p class = "places-description">I went to Hong Kong when I was very young.  Originally, I was actually going to live there permanently because my dad moved there for work.  I ended up only staying for the summer!</p>
+        </div>
+    </div>
     <h2 id = "places-header" style="margin-top: 1cm">Places I Want To Visit</h2>
-    <p></p>
+    <p class = "places-description">I want to travel to Italy, Korea, France, Japan, and many other places.  It has been such a long time since I last travelled so any place sounds exciting!</p>
 </div>
 {% endblock %}
