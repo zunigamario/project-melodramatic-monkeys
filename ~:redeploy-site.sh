@@ -9,5 +9,4 @@ source python3-virtualenv/bin/activate
 pip install -r requirements.txt
 
 tmux new
-tmux source python3-virtualenv/bin/activate
-tmux flask run --host=0.0.0.0
+flask run --host=0.0.0.0
