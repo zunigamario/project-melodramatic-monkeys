@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 from dotenv import load_dotenv
 from peewee import *
 
-load_dotenv()
+load_dotenv("example.env")
 app = Flask(__name__)
 
 mydb = MySQLDatabase(os.getenv("MY_SQLDATABASE"),
@@ -12,6 +12,8 @@ mydb = MySQLDatabase(os.getenv("MY_SQLDATABASE"),
     host=os.getenv("MYSQL_HOST"),
     port=3306
 )
+
+print(mydb)
 
 isKayla = True
 
