@@ -5,7 +5,7 @@ from peewee import *
 import datetime
 from playhouse.shortcuts import model_to_dict
 
-load_dotenv(".env")
+load_dotenv()
 app = Flask(__name__)
 
 
