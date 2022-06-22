@@ -10,7 +10,6 @@ app = Flask(__name__)
 
 
 
-isKayla = True
 
 @app.route('/')
 def mario_index():
@@ -82,8 +81,8 @@ class TimelinePost(Model):
     class Meta:
         database = mydb
 
-mydb.connect()
-mydb.create_tables([TimelinePost])
+# mydb.connect()
+# mydb.create_tables([TimelinePost])
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
