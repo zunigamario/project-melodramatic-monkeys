@@ -26,8 +26,9 @@ class TimelinePost(Model):
     class Meta:
         database = mydb
 
-mydb.connect()
-mydb.create_tables([TimelinePost])
+# mydb.connect()
+# mydb.create_tables([TimelinePost])
+# these two lines cause the problem
 
 isKayla = True
 
