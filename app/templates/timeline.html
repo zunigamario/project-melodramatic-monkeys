@@ -1,18 +1,21 @@
 {% extends "mario_index.html" %}
 {% block body %}
+<h1 id="timeline-header">Timeline</h1>
+
+<h2 id="timeline-subheader">Add Something To The Timeline</h2>
 
 <form id="form">
-    <label for="name" class="timeline-input">Name:</label><br>
-    <input type="text" name="name" class="timeline-input"><br>
+    <input type="text" name="name" class="timeline-input" placeholder="Name"><br>
 
-    <label for="email">E-Mail:</label><br>
-    <input type="text" name="email"><br>
+    <input type="text" name="email" class="timeline-input" placeholder="Email"><br>
 
-    <label for="content">Content:</label><br>
-    <input type="text" name="content"><br>
+    <input type="text" name="content" class="timeline-input" placeholder="Message"><br>
 
-    <button type="submit">Submit</button>
+    <button type="submit" class="timeline-button">Submit</button>
 </form>
+
+<br><br>
+<h2 id="timeline-subheader">Previous Posts</h2>
 
 <div id="app"></div>
 
