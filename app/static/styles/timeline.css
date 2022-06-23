@@ -1,0 +1,14 @@
+.timeline-input {
+    background-color: rgb(253, 198, 255);
+}
+
+.timeline-user {
+    /* background-color: #f6f6f6;
+    padding: 1rem;
+    margin-bottom: 1rem; */
+    background-color: rgba(163, 113, 196, 0.106);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    color: rgb(253, 198, 255);
+}
