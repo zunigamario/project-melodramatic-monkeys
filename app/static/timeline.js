@@ -1,4 +1,4 @@
-fetch('http://mariozandkaylaf.duckdns.org:5000/api/timeline_post').then(response => {
+fetch('/api/timeline_post').then(response => {
         console.log(response);
         if (!response.ok) {
             throw Error("ERROR");
@@ -31,7 +31,7 @@ fetch('http://mariozandkaylaf.duckdns.org:5000/api/timeline_post').then(response
 
         console.log([...payload])
 
-        fetch('http://mariozandkaylaf.duckdns.org:5000/api/timeline_post', {
+        fetch('/api/timeline_post', {
             method: "POST",
             body: payload,
         })
