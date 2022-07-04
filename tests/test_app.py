@@ -12,7 +12,7 @@ class AppTestCase(unittest.TestCase):
         response = self.client.get("/")
         assert response.status_code == 200
         html = response.get_data(as_text = True)
-        assert  "<title> project-melodramatic-monkeys </title>" in html
+        assert  "<title> project melodramatic monkeys </title>" in html
 
     def test_timeline(self):
         response = self.client.get("/api/timeline_post")
