@@ -3,6 +3,7 @@ from flask import Flask, render_template, request
 from dotenv import load_dotenv
 from peewee import * 
 import datetime
+import re
 from playhouse.shortcuts import model_to_dict
 
 load_dotenv()
@@ -19,7 +20,7 @@ else:
     mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
         user=os.getenv("MYSQL_USER"),
         password=os.getenv("MYSQL_PASSWORD"),
-        host=os.getenv("MySQL_HOST"),
+        host=os.getenv("MYSQL_HOST"),
         port=3306
         )
 
@@ -103,11 +104,23 @@ mydb.create_tables([TimelinePost])
 
 
 
+emailFormat = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
+    try:
+        name = request.form['name']
+    except:
+        return "Invalid name", 400
     name = request.form['name']
-    name = request.form['name']
+
     email = request.form['email']
+    if not re.fullmatch(emailFormat, email):
+        return "Invalid email", 400
+        
+    try:
+        content = request.form['content']
+    except:
+        return "Invalid content", 400
     content = request.form['content']
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
      

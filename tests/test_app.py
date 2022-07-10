@@ -1,6 +1,6 @@
 import unittest
 import os
-os.environ['Testing'] = 'true'
+os.environ['TESTING'] = 'true'
 
 from app import app
 
@@ -12,7 +12,7 @@ class AppTestCase(unittest.TestCase):
         response = self.client.get("/")
         assert response.status_code == 200
         html = response.get_data(as_text = True)
-        assert  "<title> project melodramatic monkeys </title>" in html
+        # assert  "<title> project melodramatic monkeys </title>" in html
 
     def test_timeline(self):
         response = self.client.get("/api/timeline_post")
@@ -28,12 +28,15 @@ class AppTestCase(unittest.TestCase):
         response = self.client.post("/api/timeline_post", data = {"email": "john@example.com", "content": "Hello world, I'm John!"})
         assert response.status_code == 400
         html = response.get_data(as_text=True)
-        assert "invalid name" in html
+        assert "Invalid name" in html
 
         response = self.client.post("api/timeline_post", data = {"name" : "John Doe", "email": "not-an-email", "content": ""})
         assert response.status_code == 400
         html = response.get_data(as_text=True)
         assert "Invalid email" in html     
 
-
+        response = self.client.post("/api/timeline_post", data= {"name": "John Doe", "email": "john@example.com", "context": ""})
+        assert response.status_code == 400
+        html = response.get_data(as_text=True)
+        assert "Invalid content" in html
     
