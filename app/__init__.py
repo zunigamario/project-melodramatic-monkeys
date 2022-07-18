@@ -116,7 +116,7 @@ def post_time_line_post():
     email = request.form['email']
     if not re.fullmatch(emailFormat, email):
         return "Invalid email", 400
-        
+      
     try:
         content = request.form['content']
     except:
